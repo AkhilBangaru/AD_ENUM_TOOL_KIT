@@ -174,7 +174,7 @@ This framework integrates and orchestrates the following tools:
 
 ### Required Tools
 
-```bash
+```
 sudo apt install responder mitm6 nmap hashcat ldap-utils smbclient netexec impacket-scripts
 ```
 
@@ -182,7 +182,7 @@ sudo apt install responder mitm6 nmap hashcat ldap-utils smbclient netexec impac
 
 ## 🚀 Installation & Usage
 
-```bash
+```
 git clone https://github.com/<your-username>/AD-ENUM.git
 cd AD-ENUM
 sudo python3 ad_enum.py
