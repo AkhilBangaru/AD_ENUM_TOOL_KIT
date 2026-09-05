@@ -1,7 +1,7 @@
 <img width="2048" height="2048" alt="Logo" src="https://github.com/user-attachments/assets/57eaf053-c8da-477d-8b2d-d3fc24500ee2" />
 
 
-# 🛡️ AD-ENUM
+#  AD-ENUM
 
 ### Interactive Active Directory Enumeration & Attack Framework
 
@@ -13,26 +13,26 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-## ✨ Key Highlights
+##  Key Highlights
 
-* 🧠 **Attack-Aware Workflow**
+*  **Attack-Aware Workflow**
 
   * Smart **Attack Advisor** recommends next steps based on open ports & security posture
-* 🖥️ **Full Interactive TUI**
+*  **Full Interactive TUI**
 
   * Live split-screen monitoring using `curses`
   * Real-time Responder + Relay output
-* 🔄 **End-to-End Attack Chain**
+*  **End-to-End Attack Chain**
 
   * Poison → Relay → Shell → Crack → Enumerate
-* 📁 **Automatic Loot Management**
+*  **Automatic Loot Management**
 
   * Timestamped loot directories per run
-* 🔐 **Built for Modern AD**
+*  **Built for Modern AD**
 
   * SMB signing checks
   * IPv6 / LDAP relay support
-* 🧪 **Exam & Lab Friendly**
+*  **Exam & Lab Friendly**
 
   * Clean output
   * No unnecessary noise
@@ -40,9 +40,9 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-## 📋 Features Overview
+##  Features Overview
 
-### 1️⃣ Attack Advisor (Smart Mode)
+###  Attack Advisor (Smart Mode)
 
 * Scans target ports
 * Detects:
@@ -52,14 +52,14 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-### 2️⃣ Responder Module
+###  Responder Module
 
 * LLMNR / NBT-NS poisoning
 * Live monitoring
 
 ---
 
-### 3️⃣ SMB Relay (NTLM Relay)
+###  SMB Relay (NTLM Relay)
 
 * Automatic scan for **SMB signing NOT required**
 * Generates vulnerable target list
@@ -75,7 +75,7 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-### 4️⃣ Password Spraying
+###  Password Spraying
 
 * Powered by **NetExec / CrackMapExec**
 * Supports:
@@ -87,7 +87,7 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-### 5️⃣ Impacket Shell Launcher
+###  Impacket Shell Launcher
 
 * Quick access to:
 
@@ -101,7 +101,7 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-### 6️⃣ IPv6 DNS Takeover & LDAP Relay
+###  IPv6 DNS Takeover & LDAP Relay
 
 * Fully automated:
 
@@ -116,7 +116,7 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-### 7️⃣ Enumeration Module
+###  Enumeration Module
 
 * SMB:
 
@@ -131,7 +131,7 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-### 8️⃣ Hash Cracking Engine
+###  Hash Cracking Engine
 
 * Paste hash **or** load from file
 * Auto-detects hash type:
@@ -145,13 +145,13 @@ It combines **Responder, NTLM Relay, IPv6 attacks, password spraying, Impacket s
 
 ---
 
-### 9️⃣ Loot Viewer
+###  Loot Viewer
 
 * Browse all captured data directly from the menu
 
 ---
 
-## 🧰 Tools Used Internally
+##  Tools Used Internally
 
 This framework integrates and orchestrates the following tools:
 
@@ -166,7 +166,7 @@ This framework integrates and orchestrates the following tools:
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 ### Python
 
@@ -180,7 +180,7 @@ sudo apt install responder mitm6 nmap hashcat ldap-utils smbclient netexec impac
 
 ---
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 ```
 git clone https://github.com/<your-username>/AD-ENUM.git
@@ -188,11 +188,11 @@ cd AD-ENUM
 sudo python3 ad_enum.py
 ```
 
-> ⚠️ **Must be run as root** (network poisoning & relay require it)
+>  **Must be run as root** (network poisoning & relay require it)
 
 ---
 
-## 📂 Loot Structure
+##  Loot Structure
 
 ```
 AD_ENUM_loot_YYYYMMDD_HHMMSS/
@@ -208,22 +208,22 @@ Each run creates a **new isolated loot directory** automatically.
 
 ---
 
-## 🎯 Intended Use
+##  Intended Use
 
 * Active Directory labs
 * Red-team practice
 * Learning NTLM relay & AD attack chains
 
-> ❗ **For educational and authorized testing only**
+>  **For educational and authorized testing only**
 
 ---
 
-## 👤 Author
+##  Author
 
 **Akhil Bangaru**
 
 
-## 📌 Roadmap
+##  Roadmap
 
 * Kerberoasting automation
 * BloodHound ingestion
